@@ -1,0 +1,12 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: jenkins-pv
+spec:
+  capacity:
+    storage: 20Gi
+  nfs:
+    server: 192.168.240.34
+    path: /srv/nfs/kubedata
+  accessModes:
+    - ReadWriteMany
