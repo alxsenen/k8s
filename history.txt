@@ -1,0 +1,943 @@
+    1  cd ~/.zshrc
+    2  ls
+    3  cd ..
+    4  ls
+    5  pwd
+    6  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    7  ls
+    8  pwd
+    9  cd .oh-my-zsh/
+   10  ls
+   11  nano ~/.zshrc
+   12  cd
+   13  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+   14  nano ~/.zshrc
+   15  p10k configure
+   16  ls
+   17  kubectl
+   18  ls
+   19  kubectl apply -f rbac.yaml
+   20  kubectl rollout restart deployment nfs-client-provisioner
+   21  cd /usr/share/fonts
+   22  ls
+   23  cd zsh
+   24  ls
+   25  cd ..
+   26  cd type1
+   27  ls
+   28  cd gsfonts
+   29  ls
+   30  cd ..
+   31  ls
+   32  cd cmap
+   33  ls
+   34  sudo apt install libglib2.0-bin && gsettings set org.gnome.desktop.interface monospace-font-name 'MesloLGS NF 11'
+   35  ls
+   36  cd ..
+   37  ls
+   38  rm -rf zsh
+   39  sudo rm -rf zsh
+   40  sudo apt install libglib2.0-bin && gsettings set org.gnome.desktop.interface monospace-font-name 'MesloLGS NF 11'
+   41  cd ~/.local/share/fonts
+   42  mkdir -p  ~/.local/share/fonts
+   43  cd ~/.local/share/fonts
+   44  wget https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Regular.ttf
+   45  wget https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Bold.ttf
+   46  wget https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Italic.ttf
+   47  wget https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Bold%20Italic.ttf
+   48  pk10 confgure
+   49  p10k confgure
+   50  p10k configure
+   51  fc-cache -fv ~/.local/share/fonts
+   52  p10k configure
+   53  pwd
+   54  ls
+   55  reboot
+   56  exit
+   57  fc-cache -fv ~/.local/share/fonts
+   58  p10k configure
+   59  cd
+   60  ls
+   61  p10k configure
+   62  ls
+   63  cd ~/.zshrc
+   64  cd ~
+   65  ls
+   66  pwd
+   67  cd ~/.oh-my-zsh/
+   68  ls
+   69  vi oh-my-zsh.sh
+   70  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting\n
+   71  kubectl get pods
+   72  kubectl logs 
+   73  kubectl logs nfs-client-provisioner-85654fbbb6-zh8sk
+   74  ls
+   75  cd ~/.local/share/fonts
+   76  ls
+   77  fc-cache -fv ~/.local/share/fonts
+   78  p10k configure
+   79  fc-cache -fv ~/.local/share/fonts
+   80  p10k configure
+   81  kubectl get nodes
+   82  helm repo list
+   83  helm list
+   84  kubectl get deployments
+   85  kubectl describe nfs-client-provisioner
+   86  kubectl describe nfs-client-provisioner -n defult
+   87  kubectl describe deployment nfs-client-provisioner 
+   88  kubectl kubectel get pods
+   89  kubectl get pods
+   90  kubectl logs nfs-client-provisioner-85654fbbb6-zh8sk
+   91  ls
+   92  cat rbac.yaml
+   93  kubectl apply -f rbac.yaml
+   94  ls
+   95  cd deploys
+   96  ls
+   97  cd ..
+   98  cat role.yaml
+   99  kubectl apply -f role.yaml
+  100  cd deploys
+  101  ls
+  102  cd kubernetes/dashboard/
+  103  ls
+  104  cd ..
+  105  ls
+  106  cd yamls
+  107  ls
+  108  cd nfs-provisioner
+  109  ls
+  110  cat rbac.yaml
+  111  kubectl apply -f rbac.yaml
+  112  kubecetl rollout restart deployment nfs-client-provisioner
+  113  kubectl rollout restart deployment nfs-client-provisioner
+  114  kubectl get pods
+  115  watch -n1 "kubectl get pods"
+  116  kubectl get pods
+  117  kubectl logs nfs-client-provisioner-67f6c8b8cd-wljmm
+  118  kubectl describe rbac
+  119  kubectl describe clusterrole.rbac
+  120  kubectl get clusterrole,clusterrolebinding,role,rolebinding | grep nfs
+  121  ls
+  122  cd
+  123  ls
+  124  nano rbac1.yaml
+  125  kubectl apply -f rbac1.yaml
+  126  kubectl rollout restart deployment nfs-client-provisioner
+  127  watch -n1 "kubectl get pods"
+  128  kubectl get logs
+  129  kubectl get pods
+  130  kubectl logs nfs-client-provisioner-69d55d48c8-nc775
+  131  nano rbac1.yaml
+  132  kubectl apply -f rbac1.yaml
+  133  kubectl logs nfs-client-provisioner-69d55d48c8-nc775
+  134  kubectl rollout restart deployment nfs-client-provisioner
+  135  kubectl logs nfs-client-provisioner-69d55d48c8-nc775
+  136  watch -n1 "kubectl get pods"
+  137  kubectl get pods
+  138  kubectl logs nfs-client-provisioner-6fc989cbfd-rmnhn
+  139  nano sc.yaml
+  140  kubectl apply -f sc.yaml
+  141  nano sc.yaml
+  142  kubectl apply -f sc.yaml
+  143  kubectl create -f sc.yaml
+  144  kubectl rollout restart deployment nfs-client-provisioner
+  145  watch -n1 "kubectl get pods"
+  146  kubectl logs nfs-client-provisioner-78bc5d54d-7z6sw
+  147  nano sc.yaml
+  148  kubectl create -f sc.yaml
+  149  kubectl logs nfs-client-provisioner-78bc5d54d-7z6sw
+  150  helm delete nfs-client-provisioner
+  151  kubectl get pods
+  152  kubectl get pods -n default
+  153  history |grep helm
+  154  ls
+  155  cat nfs-values.yaml
+  156  nano nfs-values.yaml
+  157  kubectl get nodes
+  158  kubectl get pods
+  159  history
+  160  ls
+  161  history |grep grafana
+  162  kubectl version --short
+  163  cd deploys/kubernetes/yamls
+  164  ls
+  165  cd nfs-provisioner
+  166  ls
+  167  cat class.yaml
+  168  cat deployment.yaml
+  169  ls
+  170  cat rbac.yaml
+  171  ls
+  172  kubectl get nx
+  173  kubectl get nc
+  174  ls /srv/
+  175  ls
+  176  kubectl get nodes
+  177  kubectl get sc
+  178  ls
+  179  cd
+  180  ls
+  181  mv *.yaml pp
+  182  ls
+  183  rm kubectl.sha256
+  184  ls
+  185  cd deploys/kubernetes/yamls
+  186  ls
+  187  cd nfs-provisioner
+  188  ls
+  189  kubectl get all -n nfs
+  190  kubectl get all 
+  191  ls
+  192  kubectl get pods
+  193  kubectl get pvc,pv
+  194  ls
+  195  vi deployment.yaml
+  196  cat deployment.yaml
+  197  kubectl get nodes
+  198  helm install prometheus stable/prometheus --values /tmp/prometheus.values --namespace prometheus
+  199  ls
+  200  kubectl get nodes
+  201  ls
+  202  cat exec.sh
+  203  kubectl get all --all-namespaces
+  204  kubectl get all --all-namespaces -o wide
+  205  watch -n1 "kubectl get all --all-namespaces -o wide"
+  206  clear
+  207  watch -n1 "kubectl get pods --all-namespaces -o wide"
+  208  watch -n1 "kubectl get pods --all-namespaces "
+  209  ls
+  210  clear
+  211  kubectl get deployments -A
+  212  kubectl edit deployment nfs-client-provisioner
+  213  kubectl edit nfs-client-provisioner
+  214  kubectl describe nfs-client-provisioner
+  215  helm list
+  216  kubectl delete deployment nfs-client-provisioner
+  217  kubectl get deployments
+  218  kubectl get deployments -n kube-system
+  219  kubectl delete deployment nfs-client-provisioner -n kube-system
+  220  clear
+  221  kubectl get nodes
+  222  helm list
+  223  history |grep helm
+  224  ls
+  225  cd deploys
+  226  ls
+  227  cd kubernetes
+  228  ls
+  229  cd yamls
+  230  cd fs-provisioner
+  231  cd nfs-provisioner
+  232  ls
+  233  nano default-sc.yaml
+  234  nano deployment.yaml
+  235  kubectl get sorageclas
+  236  kubectl get sorageclass
+  237  kubectl get sc
+  238  kubectl get pv,pvc
+  239  kubectl get pods
+  240  kubectl delete pv pv-nfs-pv1
+  241  kubectl delete pvc pv-nfs-pv1
+  242  kubectl delete pv pv-nfs-pv1
+  243  kubectl delete pv pv-nfs-pv1 --force
+  244  kubectl get pv,pvc
+  245  kubectl -f delete pv pv-nfs-pv1 --force
+  246  kubectl delete pv pv-nfs-pv1 -f
+  247  kubectl delete pv pv-nfs-pv1
+  248  kubectl delete pv pv-nfs-pv1 --grace-period=0 --force
+  249  kubectl get pv,pvc
+  250  ls
+  251  kubectl create -f rbac.yaml -f default-sc.yaml -f deployment.yaml
+  252  kubectl get pods 
+  253  watch -n1 "kubectl get pods -A"
+  254  kubectl describe nfs-client-provisioner-65647db58d-bqj5s
+  255  kubectl describe pod nfs-client-provisioner-65647db58d-bqj5s
+  256  kubectl logs nfs-client-provisioner-65647db58d-bqj5s
+  257  kubectl -n kube-system create serviceaccount tiller
+  258  kubectl create clusterrolebinding tiller --clusterrole cluster-admin --serviceaccount=kube-system:tiller
+  259  helm init --service-account tiller
+  260  which helm
+  261  ls /tmp
+  262  nano /tmp/prometheus.values
+  263  helm install stable/prometheus --name prometheus --values /tmp/prometheus.values --namespace prometheus
+  264  helm install --name prometheus stable/prometheus --values /tmp/prometheus.values --namespace prometheus
+  265  helm install  stable/prometheus --values /tmp/prometheus.values --namespace prometheus
+  266  helm install  stable/prometheus --values /tmp/prometheus.values --name prometheus --namespace prometheus
+  267  helm install  stable/prometheus --values /tmp/prometheus.values  --namespace prometheus --name prometheus
+  268  helm install  stable/prometheus --name prometheus --values /tmp/prometheus.values  --namespace prometheus
+  269  helm install  stable/prometheus --generate-name --values /tmp/prometheus.values  --namespace prometheus
+  270  watch -n1 "kubectl get pods -n prometheus"
+  271  kubectl create ns prometheus
+  272  helm install  stable/prometheus --generate-name --values /tmp/prometheus.values  --namespace prometheus
+  273  watch -n1 "kubectl get pods -n prometheus"
+  274  kubectl get pv
+  275  kubectl get sc
+  276  kubectl get pv,pvc
+  277  kubectl describe prometheus-1629495939-server-779b98b57f-jfk5f
+  278  kubectl describe prometheus-1629495939-server-779b98b57f-jfk5f -n prometheus
+  279  kubectl describe pod prometheus-1629495939-server-779b98b57f-jfk5f -n prometheus
+  280  kubectl get sc
+  281  kubectl delete sc managed-nfs-storage
+  282  kubectl get sc
+  283  watch -n1 "kubectl get pods -A"
+  284  ls
+  285  kubectl create -f default-sc.yaml
+  286  kubectl get sc
+  287  kubectl describe sc managed-nfs-storage
+  288  watch -n1 "kubectl get pods -n prometheus"
+  289  helm install rollout stable/prometheus --generate-name --values /tmp/prometheus.values  --namespace prometheus
+  290  helm delete stable/prometheus --generate-name --values /tmp/prometheus.values  --namespace prometheus
+  291  helm list -n prometheus
+  292  helm delete prometheus-1629495939 -n prometheus
+  293  watch -n1 "kubectl get pods -n prometheus"
+  294  helm install stable/prometheus --name prometheus --values /tmp/prometheus.values  --namespace prometheus
+  295  helm install stable/prometheus --name prometheus --namespace prometheus --values /tmp/prometheus.values
+  296  helm install --name prometheus stable/prometheus --namespace prometheus --values /tmp/prometheus.values
+  297  helm install --generate-name stable/prometheus --namespace prometheus --values /tmp/prometheus.values
+  298  cat rbac.yaml
+  299  kubectl get clusterrole,clusterrolebinding,role,rolebinding |grep nfs
+  300  kubectl get sc
+  301  helm list
+  302  helm list -n promteheus
+  303  helm list -n prometheus
+  304  helm delete prometheus-1629496423 -n prometheus
+  305  ls
+  306  vi rbac.yaml
+  307  nano deployment.yaml
+  308  kubectl get pod
+  309  kubectl describe nfs-client-provisioner-65647db58d-bqj5s
+  310  kubectl describe pod nfs-client-provisioner-65647db58d-bqj5s
+  311  kubectl describe pod nfs-client-provisioner-65647db58d-bqj5s less
+  312  kubectl describe pod nfs-client-provisioner-65647db58d-bqj5s | less
+  313  kubectl get pv,pvc
+  314  kubectl get pv,pvc -n prometheus
+  315  ls
+  316  cd ..
+  317  ls
+  318  nano 4-pvc-nfs.yaml
+  319  watch -n1 "kubectl get pvc,pv"
+  320  kubectl create -f 4-pvc-nfs.yaml
+  321  kubectl describe pvc pvc1
+  322  cd nfs-provisioner
+  323  kubectl delete -f deployment.yaml
+  324  kubectl delete -f default-sc.yaml
+  325  kubectl get sc
+  326  ls
+  327  vi default-sc.yaml
+  328  kubectl get pods
+  329  ls
+  330  cd deploys/kubernetes/c
+  331  cd deploys/kubernetes/
+  332  cd yamls
+  333  cd nfs-provisioner
+  334  ls
+  335  kubectl apply -f default-sc.yaml
+  336  ls
+  337  sudo su
+  338  ls
+  339  sudo su
+  340  ls
+  341  cd /home
+  342  ls
+  343  tar +cvzf alex.tar.gz alex
+  344  tar -cvzf alex.tar.gz alex
+  345  tar -cvzf alex.tar.gz alex/
+  346  ls
+  347  exit
+  348  sudo su
+  349  ls
+  350  sudo su
+  351  pwd
+  352  sudo su
+  353  curl o
+  354  curl https://URLDELSITIO/.%2e/TEST
+  355  curl https://www.rafap.com.uy/.%e/test
+  356  curl https://www4.rafap.com.uy/.%2e/TEST
+  357  curl https://www4.rafap.com.uy/internet/.%2e/TEST
+  358  curl http://www4.rafap.com.uy/internet/.%2e/TEST
+  359  kubectl get nodes
+  360  ls
+  361  wget https://releases.hashicorp.com/terraform/1.0.9/terraform_1.0.9_linux_amd64.zip
+  362  unzip terraform_1.0.9_linux_amd64.zip
+  363  ls
+  364  cd terraform
+  365  cat terraform
+  366  clear
+  367  ./terraform
+  368  az login
+  369  mv terraform /usr/local/bin/
+  370  sudo mv terraform /usr/local/bin/
+  371  terrform
+  372  terraform
+  373  ls
+  374  kubectl get nodes
+  375  kubectl get all --allnamespaces
+  376  kubectl get all --all-namespaces
+  377  clear
+  378  docker ps
+  379  az login
+  380  curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+  381  az login
+  382  az login --allow-no-subscriptions
+  383  clear
+  384  git clone git@github.com:alxsenen/terraform.git
+  385  ssh-keygen
+  386  cat 
+  387  cat /home/alex/.ssh/id_rsa.pub
+  388  git clone git@github.com:alxsenen/terraform.git
+  389  ls
+  390  terraform -v
+  391  ls
+  392  terraform init
+  393  ls
+  394  cd 01_ResourceGroup
+  395  terraform init
+  396  az ls
+  397  az
+  398  az account
+  399  az account list
+  400  terraform plan
+  401  terraform init
+  402  terraform plan
+  403  terraform init
+  404  terraform init -upgrade
+  405  terraform init
+  406  terraform plan
+  407  terraform init
+  408  terraform init -upgrade
+  409  terraform plan
+  410  terraform init -upgrade
+  411  terraform plan
+  412  terraform init -upgrade
+  413  terraform plan
+  414  terraform init -upgrade
+  415  terraform plan
+  416  az -h
+  417  az account list\n: 1634687498:0;az account list
+  418  ls
+  419  cd 01_ResourceGroup
+  420  ls
+  421  terraform init
+  422  terraform plan
+  423  terraform init
+  424  terraform plant
+  425  terraform plan
+  426  ls
+  427  helm repo add jenkins https://charts.jenkins.io
+  428  ls
+  429  cd
+  430  cls
+  431  ls
+  432  kubectl get all --all-namespaces
+  433  helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+  434  helm update
+  435  helm upgrade
+  436  helm repo update
+  437  helm inspect values ingress-nginx/ingress-nginx --version 4.0.6 > ingress-nginx.yml
+  438  ls
+  439  cat ingress-nginx.yml
+  440  nano ingress-nginx.yml
+  441  helm install nginx-ingress ingress-nginx/ingress-nginx --version 4.0.6 
+  442  watch -A kubectl get
+  443  watch  kubectl get -A
+  444  watch  kubectl get pod -A
+  445  helm delete  nginx-ingress
+  446  helm install ingress-nginx ingress-nginx/ingress-nginx --version 4.0.6 -n ingress-nginx
+  447  clear
+  448  kubectl create -n ingress-nginx
+  449  kubectl create namespace ingress-nginx
+  450  helm install ingress-nginx -n ingress-nginx ingress-nginx/ingress-nginx --version 4.0.6 
+  451  helm list
+  452  helm list -n default
+  453  watch  kubectl get pod -n default
+  454  kubectl get all -n ingress-nginx
+  455  helm install ingress-nginx ingress-nginx/ingress-nginx --version 4.0.6 -n ingress-nginx
+  456  kubectl get -A -n ingress-nginx
+  457  kubectl get all -n ingress-nginx
+  458  helm install ingress-nginx ingress-nginx/ingress-nginx --version 4.0.6 -n ingress-nginx
+  459  kubectl delete namespaces ingress-nginx
+  460  kubectl get ns
+  461  kubectl get all -n nginx-ingress
+  462  kubectl delete ns nginx-ingress
+  463  python3 -c "namespace='nginx-ingress';import atexit,subprocess,json,requests,sys;proxy_process = subprocess.Popen(['kubectl', 'proxy']);atexit.register(proxy_process.kill);p = subprocess.Popen(['kubectl', 'get', 'namespace', namespace, '-o', 'json'], stdout=subprocess.PIPE);p.wait();data = json.load(p.stdout);data['spec']['finalizers'] = [];requests.put('http://127.0.0.1:8001/api/v1/namespaces/{}/finalize'.format(namespace), json=data).raise_for_status()"
+  464  python3 -c "namespace='ingress-nginx';import atexit,subprocess,json,requests,sys;proxy_process = subprocess.Popen(['kubectl', 'proxy']);atexit.register(proxy_process.kill);p = subprocess.Popen(['kubectl', 'get', 'namespace', namespace, '-o', 'json'], stdout=subprocess.PIPE);p.wait();data = json.load(p.stdout);data['spec']['finalizers'] = [];requests.put('http://127.0.0.1:8001/api/v1/namespaces/{}/finalize'.format(namespace), json=data).raise_for_status()"
+  465  kubectl get ns
+  466  helm install ingress-nginx ingress-nginx/ingress-nginx --version 4.0.6 -n ingress-nginx
+  467  helm install ingress-nginx ingress-nginx/ingress-nginx --version 4.0.6 -n nginx-ingress
+  468  kubectl get clusterrole -n ingress-nginx
+  469  kubectl delete cr ingress-nginx
+  470  kubectl delete clusterrole ingress-nginx
+  471  kubectl delete clusterrole nginx-ingress
+  472  helm install ingress-nginx ingress-nginx/ingress-nginx --version 4.0.6 -n ingress-nginx
+  473  kubectl get clusterrole -n ingress-nginx
+  474  kubectl get clusterrole 
+  475  helm install ingress-nginx ingress-nginx/ingress-nginx --version 4.0.6 
+  476  kubectl get clusterrolebinding 
+  477  kubectl delete clusterrolebinding ingress-nginx
+  478  helm install ingress-nginx ingress-nginx/ingress-nginx --version 4.0.6 -n ingress-nginx
+  479  kubectl get clusterrolebinding 
+  480  kubectl delete ValidatingWebhookConfiguration ingress-nginx-admission
+  481  helm install ingress-nginx ingress-nginx/ingress-nginx --version 4.0.6 -n ingress-nginx
+  482  kubectl create ns ingress-nginx
+  483  helm install ingress-nginx ingress-nginx/ingress-nginx --version 4.0.6 -n ingress-nginx
+  484  watch -n1 "kubectel get pods -n ingress-nginx"
+  485  watch -n1 "kubectel get pod -n ingress-nginx"
+  486  watch -n1 "kubectl get pod -n ingress-nginx"
+  487  watch -n1 "kubectl get pod,svc -n ingress-nginx"
+  488  watch -n1 "kubectl get -A"
+  489  watch -n1 "kubectl get all --all-namespaces"
+  490  kubectl get all --all-namespaces
+  491  kubectl get all -n kubernetes-dashboard
+  492  helm ls -n kubernetes-dashboard
+  493  ls
+  494  cd
+  495  mkdir ingress
+  496  cd ingress
+  497  ls
+  498  nano deploy.yml
+  499  helm repo add kubernetes-dashboard https://kubernetes.github.io/dashboard/
+  500  kubectl get all -n kubernetes-dashboard
+  501  kubectl delete deployment kubernetes-dashboard -n kubernetes-dashboard
+  502  kubectl delete deployment dashboard-metrics-scraper -n kubernetes-dashboard
+  503  kubectl delete replicaset dashboard-metrics-scraper -n kubernetes-dashboard
+  504  kubectl delete replicaset dashboard-metrics-scraper-856586f554 -n kubernetes-dashboard
+  505  kubectl get all -n kubernetes-dashboard
+  506  kubectl delete service ubernetes-dashboard -n kubernetes-dashboard
+  507  kubectl delete service kubernetes-dashboard -n kubernetes-dashboard
+  508  kubectl delete service dashboard-metrics-scraper -n kubernetes-dashboard
+  509  kubectl get ClusterRole -n kubernetes-dashboard
+  510  kubectl delete ClusterRole kubernetes-dashboard
+  511  kubectl get ClusterRoleBinding 
+  512  kubectl delete ClusterRoleBinding kubernetes-dashboard
+  513  helm repo update
+  514  helm install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard
+  515  kubectl delete serviceaccount kubernetes-dashboard
+  516  kubectl delete ServiceAccount kubernetes-dashboard
+  517  kubectl get ns
+  518  kubectl delete serviceaccount kubernetes-dashboard
+  519  helm install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard
+  520  kubectl get ServiceAccount -n kubernetes-dashboard
+  521  kubectl delete ServiceAccount kubernetes-dashboard -n kubernetes-dashboard
+  522  helm install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard
+  523  kubectl delete Secret kubernetes-dashboard -n kubernetes-dashboard
+  524  kubectl delete Secret kubernetes-dashboard-certs -n kubernetes-dashboard
+  525  helm install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard
+  526  kubectl delete Secret kubernetes-dashboard-csrf -n kubernetes-dashboard
+  527  helm install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard
+  528  kubectl delete Secret kubernetes-dashboard-key-holder -n kubernetes-dashboard
+  529  helm install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard
+  530  kubectl delete cm kubernetes-dashboard-settings -n kubernetes-dashboard
+  531  helm install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard
+  532  kubectl delete role kubernetes-dashboard -n kubernetes-dashboard
+  533  helm install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard
+  534  kubectl delete rolebinding kubernetes-dashboard -n kubernetes-dashboard
+  535  helm install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard
+  536  kubectl get all -n kubernetes-dashboard
+  537  helm inspect values kubernetes-dashboard/kubernetes-dashboard > kubernetes-dashboard.yml
+  538  nano kubernetes-dashboard.yml
+  539  helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard --values kubernetes-dashboard.yml 
+  540  ls
+  541  cd 01_ResourceGroup
+  542  ls
+  543  cd
+  544  ls
+  545  cd ingress
+  546  ls
+  547  helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard --values kubernetes-dashboard.yml 
+  548  nano kubernetes-dashboard.yml
+  549  vi kubernetes-dashboard.yml
+  550  nano kubernetes-dashboard.yml
+  551  helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard --values kubernetes-dashboard.yml 
+  552  nano kubernetes-dashboard.yml
+  553  helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard --values kubernetes-dashboard.yml 
+  554  vi kubernetes-dashboard.yml
+  555  helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard --values kubernetes-dashboard.yml 
+  556  vi kubernetes-dashboard.yml
+  557  helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard --values kubernetes-dashboard.yml 
+  558  vi kubernetes-dashboard.yml
+  559  kubectl get pod -n kubernetes-dashboard
+  560  ls
+  561  mv kubernetes-dashboard.yml kubernetes-dashboard-ingress.yml
+  562  vi kubernetes-dashboard-ingress.yml
+  563  helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard --values kubernetes-dashboard-ingress.yml
+  564  vi kubernetes-dashboard-ingress.yml
+  565  helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard --values kubernetes-dashboard-ingress.yml
+  566  vi kubernetes-dashboard-ingress.yml
+  567  helm inspect values kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard > kubernetes-dashboard-ingress.yml
+  568  helm inspect values kubernetes-dashboard/kubernetes-dashboard > kubernetes-dashboard-ingress.yml
+  569  helm inspect --values kubernetes-dashboard/kubernetes-dashboard > kubernetes-dashboard-ingress.yml
+  570  history |gre inspect
+  571  history |grep inspect
+  572  helm inspect values kubernetes-dashboard/kubernetes-dashboard > kubernetes-dashboard-ingress.yml
+  573  ls
+  574  vi kubernetes-dashboard-ingress.yml
+  575  helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard --values kubernetes-dashboard-ingress.yml
+  576  kubectl get pod -n kubernetes-dashboard
+  577  kubectl get all -n kubernetes-dashboard
+  578  kubectl get all --all-namespaces
+  579  ls
+  580  vi kubernetes-dashboard-ingress.yml
+  581  helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard --values kubernetes-dashboard-ingress.yml
+  582  vi kubernetes-dashboard-ingress.yml
+  583  helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard --values kubernetes-dashboard-ingress.yml
+  584  vi kubernetes-dashboard-ingress.yml
+  585  helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard --values kubernetes-dashboard-ingress.yml
+  586  vi kubernetes-dashboard-ingress.yml
+  587  helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard --values kubernetes-dashboard-ingress.yml
+  588  vi kubernetes-dashboard-ingress.yml
+  589  helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard --values kubernetes-dashboard-ingress.yml
+  590  vi kubernetes-dashboard-ingress.yml
+  591  helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard --values kubernetes-dashboard-ingress.yml
+  592  vi kubernetes-dashboard-ingress.yml
+  593  helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard --values kubernetes-dashboard-ingress.yml
+  594  vi kubernetes-dashboard-ingress.yml
+  595  helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard --values kubernetes-dashboard-ingress.yml
+  596  vi kubernetes-dashboard-ingress.yml
+  597  helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard --values kubernetes-dashboard-ingress.yml
+  598  vi kubernetes-dashboard-ingress.yml
+  599  helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard --values kubernetes-dashboard-ingress.yml
+  600  vi kubernetes-dashboard-ingress.yml
+  601  helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard --values kubernetes-dashboard-ingress.yml
+  602  vi kubernetes-dashboard-ingress.yml
+  603  helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard --values kubernetes-dashboard-ingress.yml
+  604  vi kubernetes-dashboard-ingress.yml
+  605  helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard --values kubernetes-dashboard-ingress.yml
+  606  kubectl get pod -n kubernetes-dashboard
+  607  kubectl get -A -n kubernetes-dashboard -o wide
+  608  kubectl get all -n kubernetes-dashboard -o wide
+  609  vi kubernetes-dashboard-ingress.yml
+  610  helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard --values kubernetes-dashboard-ingress.yml
+  611  vi kubernetes-dashboard-ingress.yml
+  612  helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard -n kubernetes-dashboard --values kubernetes-dashboard-ingress.yml
+  613  kubectl get iong
+  614  kubectl get ing
+  615  kubectl get ing --all-namespaces
+  616  kubectl get all --all-namespaces
+  617  kubectl logs --follow -n ingress-nginx pod/ingress-nginx-controller-5c8d66c76d-lkplb
+  618  kubectl get all --all-namespaces -o wide
+  619  kubectl logs --follow -n kube-system deployment/kubernetes-dashboard
+  620  kubectl logs --follow -n kubernetes-dashboard deployment/kubernetes-dashboard
+  621  kubectl get pod -n kubernetes dashboard
+  622  kubectl get pod -n kubernetes-dashboard
+  623  kubectl get deployment\ -n kubernetes-dashboard
+  624  kubectl get deployment -n kubernetes-dashboard
+  625  kubectl get contexts
+  626  kubectl config get-contexts
+  627  helm ls -n kubernetes-dashboard
+  628  ls
+  629  cd
+  630  ls
+  631  git clone git@github.com:alxsenen/helm.git
+  632  git clone git@github.com:alxsenen/k8s.git
+  633  ls
+  634  cd k8s
+  635  ls
+  636  helm repo list
+  637  ls
+  638  mkdir values
+  639  cd values
+  640  ls
+  641  helm repo update
+  642  helm inspect values jenkinsci/jenkins --version 3.8.3 > jenkins-values.yml
+  643  helm inspect values jenkinsci/jenkins > jenkins-values.yml
+  644  history |grep inspect
+  645  helm repo add jenkinsci https://charts.jenkins.io/
+  646  kubectl get all --all-namespaces
+  647  helm inspect values jenkinsci/jenkins > jenkins-values.yml
+  648  ls
+  649  vi jenkins-values.yml
+  650  helm install jenkins jenkinsci/jenkins -v jenkins-values.yml
+  651  helm install jenkins jenkinsci/jenkins --values jenkins-values.yml
+  652  vi jenkins-values.yml
+  653  helm install jenkins jenkinsci/jenkins --values jenkins-values.yml
+  654  vi jenkins-values.yml
+  655  helm inspect values jenkinsci/jenkins > jenkins-values.yml
+  656  vi jenkins-values.yml
+  657  helm install jenkins jenkinsci/jenkins --values jenkins-values.yml
+  658  kubectl get all pods
+  659  kubectl get pods --all-namespaces
+  660  exit
+  661  kubectl get pods --all-namespaces
+  662  helm upgrade --install jenkins jenkinsci/jenkins --values jenkins-values.yml
+  663  ls
+  664  cd values
+  665  helm upgrade --install jenkins jenkinsci/jenkins --values jenkins-values.yml
+  666  kubectl get pods --all-namespaces 
+  667  whatch -n1 "kubectl get pods --all-namespaces"
+  668  watch -n1 "kubectl get pods --all-namespaces"
+  669  ls
+  670  helm ls -n default
+  671  helm delete jenkins -n default
+  672  ls
+  673  kubectl create ns jenkins-dashboard
+  674  helm install jenkins jenkinsci/jenkins --values jenkins-values.yml -n jenkins-dashboard
+  675  kubectl logs --follow jenkins-0
+  676  kubectl logs --follow pod/jenkins-0
+  677  history |grep follow
+  678  kubectl logs --follow pod/jenkins-0 -n jenkins-dashboard
+  679  kubectl logs --follow pod jenkins-0 -n jenkins-dashboard
+  680  kubectl delete pod jenkins-0 -n jenkins-dashboard
+  681  kubectl logs pod jenkins-0
+  682  kubectl logs jenkins-0
+  683  kubectl logs jenkins-0 -n jenkins-dashboard
+  684  kubectl describe jenkins-0
+  685  kubectl describe jenkins-0 -n jenkins-dashboard
+  686  kubectl describe pod jenkins-0 -n jenkins-dashboard
+  687  kubectl get ps
+  688  kubectl get pvs
+  689  kubectl get pvc
+  690  kubectl describe pvc pvc1
+  691  kubectl delete pvc pvc1
+  692  helm delete jenkins -n jenkins-dashboard
+  693  kubectl delete ns jenkins-dashboard
+  694  python3 -c "namespace='jenkins-dashboard';import atexit,subprocess,json,requests,sys;proxy_process = subprocess.Popen(['kubectl', 'proxy']);atexit.register(proxy_process.kill);p = subprocess.Popen(['kubectl', 'get', 'namespace', namespace, '-o', 'json'], stdout=subprocess.PIPE);p.wait();data = json.load(p.stdout);data['spec']['finalizers'] = [];requests.put('http://127.0.0.1:8001/api/v1/namespaces/{}/finalize'.format(namespace), json=data).raise_for_status()"
+  695  kubectl get ns
+  696  kubectl get pvc
+  697  ls
+  698  history |grep nfs
+  699  helm ls repo
+  700  helm repo list
+  701  ls
+  702  helm inspect values rimusz/nfs-client-provisioner > nfs-client-provisioner-values.yml
+  703  ls
+  704  helm install nfs-client-provisioner rimusz/nfs-client-provisioner --values nfs-client-provisioner-values.yml -n kube-system
+  705  helm install nfs-client-provisioner rimusz/nfs-client-provisioner --values nfs-client-provisioner-values.yml
+  706  helm ls
+  707  helm ls -n kube-system
+  708  helm ls -n default
+  709  kubectl delete ServiceAccount nfs-client-provisioner
+  710  helm install nfs-client-provisioner rimusz/nfs-client-provisioner --values nfs-client-provisioner-values.yml
+  711  kubectl get pvc
+  712  kubectl get pvs
+  713  kubectl describe nfs-client-provisioner-c6cc9b99c-n8csp
+  714  kubectl describe nfs-client-provisioner-c6cc9b99c-n8csp -n default
+  715  kubectl describe podnfs-client-provisioner-c6cc9b99c-n8csp -n default
+  716  kubectl describe pod nfs-client-provisioner-c6cc9b99c-n8csp -n default
+  717  helm delete nfs-client-provisioner -n default
+  718  helm install nfs-client-provisioner rimusz/nfs-client-provisioner --values nfs-client-provisioner-values.yml -n kube-system
+  719  kubectl delete ServiceAccount nfs-client-provisioner -n kube-system
+  720  helm install nfs-client-provisioner rimusz/nfs-client-provisioner --values nfs-client-provisioner-values.yml -n kube-system
+  721  kubectl get sc
+  722  kubectl delete sc managed-nfs-storage
+  723  helm delete nfs-client-provisioner -n kube-system
+  724  kubectl get sc
+  725  helm install nfs-client-provisioner rimusz/nfs-client-provisioner --values nfs-client-provisioner-values.yml -n kube-system
+  726  kubectl get sc
+  727  helm install jenkins jenkinsci/jenkins --values jenkins-values.yml -n jenkins
+  728  kubectl get ns
+  729  helm install jenkins jenkinsci/jenkins --values jenkins-values.yml -n jenkins
+  730  kubectl delete ns jenkins
+  731  python3 -c "namespace='jenkins';import atexit,subprocess,json,requests,sys;proxy_process = subprocess.Popen(['kubectl', 'proxy']);atexit.register(proxy_process.kill);p = subprocess.Popen(['kubectl', 'get', 'namespace', namespace, '-o', 'json'], stdout=subprocess.PIPE);p.wait();data = json.load(p.stdout);data['spec']['finalizers'] = [];requests.put('http://127.0.0.1:8001/api/v1/namespaces/{}/finalize'.format(namespace), json=data).raise_for_status()"
+  732  helm install jenkins jenkinsci/jenkins --values jenkins-values.yml -n jenkins
+  733  helm install jenkins jenkinsci/jenkins --values jenkins-values.yml 
+  734  kubectl describe pod jenkins-0
+  735  helm inspect values jenkinsci/jenkins > jenkins-values.yml
+  736  kubectl get pods -n kube-system -o wide
+  737  kubectl get sc
+  738  kubectl get pvc
+  739  kubectl get pvs
+  740  kubectl get pvc pvs
+  741  kubectl get pvc,pvs
+  742  kubectl get pvc
+  743  kubectl describe pvc jenkins
+  744  kubectl dget sc
+  745  kubectl get sc
+  746  kubectl get storageclass
+  747  nano ls
+  748  mkdir custom
+  749  cd custom
+  750  ls
+  751  nano jenkins-values.yml
+  752  helm upgrade --install jenkins jenkinsci/jenkins --values jenkins-values.yml --values jenkins-values.yml
+  753  helm delete jenkins
+  754  helm install jenkins jenkinsci/jenkins --values jenkins-values.yml --values jenkins-values.yml
+  755  kubectl get pvc
+  756  kubectl describe pvc jenkins
+  757  helm delete jenkins
+  758  helm install jenkins jenkinsci/jenkins --values jenkins-values.yml --values jenkins-values.yml
+  759  kubectl get pvc
+  760  kubectl describe pvc jenkins
+  761  kubectl get sc
+  762  kubectl get pvc
+  763  helm upgrade --install jenkins jenkinsci/jenkins --values jenkins-values.yml --values jenkins-values.yml
+  764  helm delete jenkins
+  765  helm install jenkins jenkinsci/jenkins --values jenkins-values.yml --values jenkins-values.yml 
+  766  helm delete jenkins
+  767  cd ..
+  768  ls
+  769  kubectl describe pod nfs-client-provisioner-c6cc9b99c-vzdfd
+  770  kubectl describe pod nfs-client-provisioner-c6cc9b99c-vzdfd -n kube-system
+  771  helm install jenkins jenkinsci/jenkins --values jenkins-values.yml --values jenkins-values.yml 
+  772  helm delete jenkins
+  773  watch -n1 "kubectl get pods --all-namespaces"
+  774  helm delete jenkins
+  775  kubectl get pvc
+  776  kubectl get sc
+  777  ls
+  778  nano pvc.yml
+  779  kubectl get pv
+  780  kubectl get all --all-namespaces
+  781  kubectl delete pod jenkins-0 
+  782  ubectl delete pod --grace-period=0 --force jenkins-0
+  783  kubectl delete pod --grace-period=0 --force jenkins-0
+  784  kubectl get pv
+  785  ls
+  786  kubectl apply -f pv.yml
+  787  kubectl get pv
+  788  kubectl get pvc
+  789  kubectl apply -f pvc.yml
+  790  kubectl get pvc,pv
+  791  ls
+  792  history |grep jenkins
+  793  helm inspect values jenkinsci/jenkins > jenkins-values.yml
+  794  helm install jenkins jenkinsci/jenkins --values jenkins-values.yml --values jenkins-values.yml 
+  795  watch -n1 "kubectl get pods --all-namespaces"
+  796  watch -n1 "kubectl get pods -n default"
+  797  helm ls -n default
+  798  helm delete jenkins -n default
+  799  rm custom/jenkins-values.yml
+  800  helm install jenkins jenkinsci/jenkins --values jenkins-values.yml 
+  801  watch -n1 "kubectl get pods --all-namespaces"
+  802  helm delete jenkins -n default
+  803  kubectl get pv,pvc
+  804  helm install jenkins jenkinsci/jenkins --values jenkins-values.yml 
+  805  helm delete jenkins -n default
+  806  cd custom
+  807  ls
+  808  wget https://raw.githubusercontent.com/jenkins-infra/jenkins.io/master/content/doc/tutorials/kubernetes/installing-jenkins-on-kubernetes/jenkins-sa.yaml
+  809  cd ..
+  810  ls
+  811  mv pv* custom
+  812  cd custom
+  813  kubectl apply -f jenkins-sa.yaml
+  814  kubectl create ns jenkins
+  815  kubectl apply -f jenkins-sa.yaml
+  816  wget https://raw.githubusercontent.com/jenkinsci/helm-charts/main/charts/jenkins/values.yaml
+  817  wt https://raw.githubusercontent.com/jenkins-infra/jenkins.io/master/content/doc/tutorials/kubernetes/installing-jenkins-on-kubernetes/jenkins-volume.yaml
+  818  wget https://raw.githubusercontent.com/jenkins-infra/jenkins.io/master/content/doc/tutorials/kubernetes/installing-jenkins-on-kubernetes/jenkins-volume.yaml
+  819  kubectl get pv,pvc
+  820  kubectl apply -f jenkins-volume.yaml
+  821  kubectl get pv,pvc
+  822  helm install jenkins jenkinsci/jenkins --values values.yaml -n jenkins
+  823  helm upgrade --install jenkins jenkinsci/jenkins --values values.yaml -n jenkins
+  824  helm delete jenkins -n jenkins
+  825  wget https://raw.githubusercontent.com/jenkins-infra/jenkins.io/master/content/doc/tutorials/kubernetes/installing-jenkins-on-kubernetes/jenkins-volume.yaml
+  826  kubectl get pv,pvc
+  827  kubectl delete pv jenkins-pv
+  828  kubectl apply -f jenkins-volume.yaml
+  829  kubectl get pv
+  830  helm install jenkins jenkinsci/jenkins --values values.yaml -n jenkins
+  831  kubectl descrobe pod jenkins-0 -n jenkins
+  832  kubectl describe pod jenkins-0 -n jenkins
+  833  ls
+  834  helm delete jenkins
+  835  helm delete jenkins -n jenkins
+  836  helm install jenkins jenkinsci/jenkins --values values.yaml -n jenkins 
+  837  kubectl describe pod jenkins-0 -n jenkins
+  838  helm delete jenkins -n jenkins
+  839  ls
+  840  helm install jenkins jenkinsci/jenkins --values values.yaml -n jenkins 
+  841  kubectl edit deployment jenkins -n jenkins
+  842  kubectl get deplyment -n jenkins
+  843  kubectl get dp -n jenkins
+  844  kubectl get deployments -n jenkins
+  845  kubectl edit pod jenkins-0 -n jenkins
+  846  kubectl get st -n jenkins
+  847  kubectl get statefuls 
+  848  kubectl get statefulls
+  849  kubectl get statefull
+  850  helm delete jenkins -n jenkins
+  851  ls
+  852  cd
+  853  ls
+  854  cd deploys
+  855  ls
+  856  cd kubernetes
+  857  ls
+  858  cd yamls
+  859  ls
+  860  cat 4-pv-nfs.yaml
+  861  cd ..
+  862  ls
+  863  cd ..
+  864  ls
+  865  cd jenkins
+  866  ls
+  867  cat jenkins-volume.yaml
+  868  helm install jenkins jenkinsci/jenkins --values jenkins-volume.yaml -n jenkins 
+  869  ls
+  870  kubectl get pv,pvc
+  871  kubectl delte pv jenkins-pv
+  872  kubectl delete pv jenkins-pv
+  873  kubectl get pv,pvc
+  874  cd
+  875  ls
+  876  cd k8s/
+  877  ls
+  878  cd values/custom
+  879  ls
+  880  cat pv.yml
+  881  kubectl delete pvc jenkins-pvc
+  882  kubectl delete pv jenkins-pv
+  883  kubectl delete pv jenkins
+  884  ls
+  885  kubectl apply -f pv.yml -f pvc.yml
+  886  kubectl get pv,pvc
+  887  ls
+  888  rm jenkins-volume.yaml.1
+  889  ls
+  890  cat values.yaml
+  891  ls
+  892  kubect get storageclass
+  893  kubectl get storageclass
+  894  kubectl get pv,pvc
+  895  kubectl delete pvc jenkins-pvc
+  896  kubectl apply -f pvc.yml
+  897  kubectl get pvc
+  898  kubectl delete pvc jenkins-pvc
+  899  kubectl apply -f pvc.yml
+  900  kubectl get pvc
+  901  kubectl get pvc,pv
+  902  kubectl get sc
+  903  kubectl delete pvc jenkins-pvc
+  904  kubectl delete pv jenkins-pv
+  905  kubectl get sc
+  906  kubectl get pv,pvc
+  907  kubectl apply -f pv.yml
+  908  kubectl get pv,pvc
+  909  kubectl apply -f pvc.yml
+  910  kubectl get pv,pvc
+  911  kubectl apply -f pvc.yml
+  912  kubectl delete pvc jenkins-pvc
+  913  kubectl apply -f pvc.yml
+  914  kubectl get pv,pvc
+  915  kubectl describe pvc jenkins-pvc
+  916  kubectl delete pvc jenkins-pvc
+  917  kubectl apply -f pvc.yml
+  918  kubectl describe pvc jenkins-pvc
+  919  kubectl delete pvc jenkins-pvc
+  920  kubectl apply -f pvc.yml
+  921  kubectl get pv,pvc
+  922  kubectl delete pvc jenkins-pvc
+  923  kubectl delete pv jenkins-pv
+  924  ls
+  925  kubectl delete pv jenkins-pv
+  926  ls
+  927  cd values
+  928  ls
+  929  helm ls -n kube-syste,
+  930  helm ls -n kube-system
+  931  helm delete nfs-client-provisioner -n kube-system
+  932  watch  -n1 "kubectl get pods -n kube-system"
+  933  history |grep nfs
+  934  kubectl get sc
+  935  helm install nfs-client-provisioner rimusz/nfs-client-provisioner --values nfs-client-provisioner-values.yml -n kube-system
+  936  kubectl describe pod nfs-client-provisioner-c6cc9b99c-5s7ww -n kube-system
+  937  kubectl get pv,pvc
+  938  kubectl apply -f custom/pvc.yml
+  939  kubectl get pvc
+  940  kubectl describe pvc test-claim
+  941  ls
+  942  cd
+  943  history
