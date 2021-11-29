@@ -1,0 +1,729 @@
+credentials:
+  system:
+    domainCredentials:
+    - credentials:
+      - usernamePassword:
+          id: "Git_de_pando"
+          password: "{AQAAABAAAAAQlo9CtU0HUsiHsrcPArYD4zCtOkMBVSfS/LRvOfujlrE=}"
+          scope: GLOBAL
+          username: "aplicativos"
+          usernameSecret: true
+      - usernamePassword:
+          id: "VCenterPando"
+          password: "{AQAAABAAAAAQQeXWCJkc6S+J1trCNrdAthEHf1exnFbPPPm3feIbq38=}"
+          scope: GLOBAL
+          username: "administrator@synergy-pando.local"
+          usernameSecret: true
+      - usernamePassword:
+          id: "128896af-534a-4eb6-bf2b-616b628fa886"
+          password: "{AQAAABAAAAAQtJKZ4D/t3C/yQdbke5doCcub5/gNh+HAXfjwrJk2Ih8=}"
+          scope: GLOBAL
+          username: "dcc-pando\\jkolugnyecz"
+          usernameSecret: true
+      - usernamePassword:
+          description: "Administrador de Pando"
+          id: "557c097c-2ee5-424a-8184-ed2e89479245"
+          password: "{AQAAABAAAAAQLLsbvIxAoypDm4f+/2KcnPtPVBC213RNU1mdPA75Tyk=}"
+          scope: GLOBAL
+          username: "dcc-pando\\Administrator"
+          usernameSecret: true
+      - usernamePassword:
+          description: "Admin Vcenter Sonda"
+          id: "cf1c1dcf-3a31-4fbe-9114-8e1d83f0d881"
+          password: "{AQAAABAAAAAQc9pS3KFysiRkSVYVvW1F4/xKqAWQZ7UI1eV6fA0Qejg=}"
+          scope: GLOBAL
+          username: "Administrator@vsphere.local"
+          usernameSecret: true
+      - usernamePassword:
+          description: "Admin VCenter RAFAP"
+          id: "12553021-a39f-4a7d-8cc4-fe3ba4461155"
+          password: "{AQAAABAAAAAQ5nkksL5WIYtMaAJtKJTGlzdmu9pRb/BT0cmxyqr9qIc=}"
+          scope: GLOBAL
+          username: "administrator@inet.rafap.com.uy"
+          usernameSecret: true
+      - usernamePassword:
+          description: "Admin Jenkins de RAFAP"
+          id: "RAFAP_JENKINS"
+          password: "{AQAAABAAAAAQUxgFyfgC/2d0klAnkg7FTYJq4gt0c/EeVOo9PV4lC3g=}"
+          scope: GLOBAL
+          username: "admin"
+          usernameSecret: true
+      - usernamePassword:
+          description: "Admin de RAFISA"
+          id: "dd7459e8-4e58-4351-a3ba-feb390c72251"
+          password: "{AQAAABAAAAAQscH2U9zDuy20oE0y/wft25yn6VP9iBTjjK92PghlQaY=}"
+          scope: GLOBAL
+          username: "fideicomiso\\Administrator"
+          usernameSecret: true
+      - usernamePassword:
+          description: "Admin Copagran"
+          id: "c19d111b-f09f-4794-9e7b-532a053aad35"
+          password: "{AQAAABAAAAAQrT7PG4OwO9P0HktL/fWET+St7NICow1G39rSpZV0NPM=}"
+          scope: GLOBAL
+          username: "copagran\\supervisor"
+          usernameSecret: true
+      - string:
+          description: "Acceso ASSE Management"
+          id: "2c60596f-155c-4a8b-a0c3-cde71e5705db"
+          scope: GLOBAL
+          secret: "{AQAAABAAAAAQS/1OLmhQS3emF9LeBVgfQq8KN/7+YjfoGNv14kFBaOM=}"
+      - usernamePassword:
+          description: "Admin de RAFAP"
+          id: "3d9548e1-cbc0-41de-8c57-76c548a8a9aa"
+          password: "{AQAAABAAAAAQfgDcr1wnzyo9/3t2chETLqXE7gyeFL/oFsSX6uI6OEc=}"
+          scope: GLOBAL
+          username: "republica_afap\\sondaadmin"
+          usernameSecret: true
+      - usernamePassword:
+          description: "Admin Jenkins 33"
+          id: "7fff14ea-a99f-4e7a-938b-4a7f34f6c02e"
+          password: "{AQAAABAAAAAQmDZRpYU01NcI5S2jNOjxQRmMvNWhRBYpeg6e8EueBBc=}"
+          scope: GLOBAL
+          username: "admin"
+          usernameSecret: true
+      - usernamePassword:
+          description: "ASSE - Admin Vcenter "
+          id: "a5f3ceca-09e6-44fb-82c5-79ebe9aa034c"
+          password: "{AQAAABAAAAAQtAb5hVrNXEDuSFHgsUxGg3rlLgPLZb7GHgve9joFw2E=}"
+          scope: GLOBAL
+          username: "administrator@vsphere.local"
+          usernameSecret: true
+      - usernamePassword:
+          description: "Admin Vcenter SANAMERICANO"
+          id: "4d0ad7ef-4328-40f3-97a5-04d36cf8623f"
+          password: "{AQAAABAAAAAQe3Fheb0ZV3iAV0ezFtgsYpxIy/YK6RjuYNQ3JYkokTY=}"
+          scope: GLOBAL
+          username: "administrator@vsphere.local"
+          usernameSecret: true
+      - usernamePassword:
+          description: "Admin en PPV"
+          id: "cdc58e4d-86fd-4444-8bc9-0bb5c4e8c3c9"
+          password: "{AQAAABAAAAAQxyc1v+dfKFI8tAMU9xLn3jV5gGg6WbntTRy8bQ1XyOM=}"
+          scope: GLOBAL
+          username: "sondappv@ppv.com.uy"
+          usernameSecret: true
+      - usernamePassword:
+          id: "Root Mgmt Ministerio del Interior"
+          password: "{AQAAABAAAAAQBlAG+foqBC2VcxjjlkOjiJV1FbGplClFa2Pu+fWgpMc=}"
+          scope: GLOBAL
+          username: "root"
+          usernameSecret: true
+      - usernamePassword:
+          description: "admin PVCI"
+          id: "696bc06d-91ba-4413-81c1-79bdb9f098f4"
+          password: "{AQAAABAAAAAQQp3fF7Zoh6TXawN5F0SKuXb6khFs/T22hglYtJgeRlU=}"
+          scope: GLOBAL
+          username: "pvci0\\sondapvci"
+          usernameSecret: true
+      - usernamePassword:
+          description: "Pivot del Ministerio 172.29.251.29"
+          id: "16d1795a-e719-4ea9-8a5c-60defc1e815c"
+          password: "{AQAAABAAAAAQXhoFWY9FYx4UYkLvjU0EoU8fxnPlR9F+hWFreO4ijjc=}"
+          scope: GLOBAL
+          username: "Administrator"
+          usernameSecret: true
+      - usernamePassword:
+          description: "Rafisa23"
+          id: "0ddbc93e-ae1e-4317-944f-39c9ff18301f"
+          password: "{AQAAABAAAAAQq4pSA0pd5w83TItSrfsNjhGTM2UhprzBWnXGcV+0WhA=}"
+          scope: GLOBAL
+          username: "rafisa23\\administrator"
+          usernameSecret: true
+      - usernamePassword:
+          description: "Credential for SONDA Linux Servers"
+          id: "root-sonda-linux"
+          password: "{AQAAABAAAAAQAocLu353ylGdU5CJtUX2hh2aJNFPhDBQnyTilWD9IIU=}"
+          scope: GLOBAL
+          username: "root"
+          usernameSecret: true
+      - usernamePassword:
+          id: "8a4eff75-e608-4297-9aff-63ff419ef88a"
+          password: "{AQAAABAAAAAQOaor3dQzIwlllRJeu8wGX+W9y9yP7Fh6/h9ifQ++3kw=}"
+          scope: GLOBAL
+          username: "sonda\\admuy.jkolugnv"
+          usernameSecret: true
+      - usernamePassword:
+          id: "4dd2aa47-7dfd-4287-873b-1a17a69428b7"
+          password: "{AQAAABAAAAAQcqCDWC8AJOjnHhNwqw6NZezzUeMnOMWbBNwSPDVa/5w=}"
+          scope: GLOBAL
+          username: "sonda.com\\admur.jrabinol"
+          usernameSecret: true
+      - usernamePassword:
+          description: "Admin local VEEAM PVCI"
+          id: "f3606dd8-bcdc-4a57-9852-ad4577fd0ff5"
+          password: "{AQAAABAAAAAQwrB9rXLxsxb36oRR3stdz+F/G7lcOmdUzDGv2E8heAU=}"
+          scope: GLOBAL
+          username: ".\\administrador"
+          usernameSecret: true
+      - usernamePassword:
+          description: "Vcenter de PPV"
+          id: "938d8333-9650-4db5-9848-72ed4eb2daa3"
+          password: "{AQAAABAAAAAQPUgnnlK0ql5Vyy4K7vPoUnIasNDqNy6pmz15Y3nSw+4=}"
+          scope: GLOBAL
+          username: "administrator@vsphere.local"
+          usernameSecret: true
+      - usernamePassword:
+          description: "Token para accesar a Gitlab"
+          id: "Jenkins"
+          password: "{AQAAABAAAAAgd1P2g3/fUSaR5GVsW9RAMvF11GVerlMZVGWNZkJbts9xoUGPE6fk7uQGxGwrPr92}"
+          scope: GLOBAL
+          username: "gitlab+deploy-token-1"
+          usernameSecret: true
+      - usernamePassword:
+          description: "DCC - ASSE LINUX"
+          id: "DCC - ASSE LINUX"
+          password: "{AQAAABAAAAAQkZWq0y9k6OTihY4sgnOny3j4ZtmW2pOP3N/CWDkkapE=}"
+          scope: GLOBAL
+          username: "root"
+          usernameSecret: true
+      - usernamePassword:
+          description: "DCC Pando ASSE Linux"
+          id: "DCC Pando ASSE Linux"
+          password: "{AQAAABAAAAAQQfFMtAlNms/JS3Buyc4nlR65Lvq6M5k9zYoLvLeK+GQ=}"
+          scope: GLOBAL
+          username: "root"
+          usernameSecret: true
+      - gitLabApiTokenImpl:
+          apiToken: "{AQAAABAAAAAQGUQJDBN8G6a4hg1bM/BorMNjKCNJuDsLsM8R0hwSrfw=}"
+          id: "Prueba"
+          scope: GLOBAL
+      - usernamePassword:
+          id: "58a83d82-209e-4980-b93d-512a4af5b04e"
+          password: "{AQAAABAAAAAQyq27QZzQ2zqf14KbsJZzunH1HgahZnDpl7JPQg8mgPw=}"
+          scope: GLOBAL
+          username: "sonda\\autousr"
+          usernameSecret: true
+      - usernamePassword:
+          description: "ASSE VCenter Administrator"
+          id: "asse-user-vcenter"
+          password: "{AQAAABAAAAAQ0DdXPGoEBxH2tc/ay0Gc6A8zqBI+6s23sAdpoKcaSrU=}"
+          scope: GLOBAL
+          username: "administrator@vsphere.local"
+          usernameSecret: true
+      - usernamePassword:
+          description: "rancid"
+          id: "rancid"
+          password: "{AQAAABAAAAAQ2ntIOvZcrsRpfQsWrVbn+wmiVe7Q8LlH/DVYL47yQUk=}"
+          scope: GLOBAL
+          username: "admin"
+      - usernamePassword:
+          description: "Administrador VCenter VBlock"
+          id: "41917235-6d9b-47c0-9ef7-9a2076c04f69"
+          password: "{AQAAABAAAAAQXxygN7aeAT/ivdURGhVCSBFAWco/YthxeFT28MhweDQ=}"
+          scope: GLOBAL
+          username: "administrator@vsphere.local"
+      - usernamePassword:
+          description: "FortiGate 600"
+          id: "a0e32b2e-1a8f-4bf5-9787-efdd887be03f"
+          password: "{AQAAABAAAAAQ+UdB5SLhxfw2tWEZVGC1GUbOG/HD8AychB8ejKBqx1o=}"
+          scope: GLOBAL
+          username: "admin"
+      - gitLabApiTokenImpl:
+          apiToken: "{AQAAABAAAAAgn7Z0AQIs6thdwMFm9CI0F2bw4FZsIfW1gZh86S8mnzEmG+Y6lv5a7MUz8z51Ejjh}"
+          id: "gWNTRQ2Q4snfEp7-EKa7"
+          scope: GLOBAL
+      - gitLabApiTokenImpl:
+          apiToken: "{AQAAABAAAAAgssQn2vT4N4a1EtCrYjTyfU5mENNLxMmpdr39XwDXU6s5LBIcwM1IOWwOTOgdfSO5}"
+          description: "Gital API token last"
+          id: "522adff9-209b-4648-9b4f-0b62ef22dd84"
+          scope: GLOBAL
+      - usernamePassword:
+          description: "AutoUsr@Sonda.com"
+          id: "7d6f9352-c045-486a-bd29-a8e9554af1d5"
+          password: "{AQAAABAAAAAQhR2HEBCGXhLCbqDpzuF1JkpOkJnqO5ExPAxtaRhErtI=}"
+          scope: GLOBAL
+          username: "sonda\\autousr"
+      - usernamePassword:
+          description: "WUG Ministerio "
+          id: "3632ce99-79f5-44db-a6f7-1950c8b90cb4"
+          password: "{AQAAABAAAAAQG874PlIG1nJ+dG+o0eRjvBZMKtLtRpbT6iK9H15xxzA=}"
+          scope: GLOBAL
+          username: ".\\administrator"
+      - usernamePassword:
+          description: "Ministerio Administrador "
+          id: "MIN_Admin"
+          password: "{AQAAABAAAAAQMIKl7/L8dq5e7NteHAKowbGVkvmFlR94yQCTn3OCOSI=}"
+          scope: GLOBAL
+          username: "sivve\\sondaadm"
+      - usernamePassword:
+          description: "GRABADORES Admin"
+          id: "08d27138-0607-4393-b52e-84cf7f19e587"
+          password: "{AQAAABAAAAAQAJGY44tcNe1ZYhV0rTH2y9RilW8CkoYZkeQDzwksyEc=}"
+          scope: GLOBAL
+          username: ".\\administrator"
+      - usernamePassword:
+          description: "GYR - Admin"
+          id: "922ecaeb-834c-4e77-8d76-9605e16cad59"
+          password: "{AQAAABAAAAAQw5FUKjX41T9xXAQK2aUyccWGJna/MzmOJtS3LN9qDD8=}"
+          scope: GLOBAL
+          username: "gyr\\administrator"
+      - usernamePassword:
+          description: "Forti 100 - Ministerio"
+          id: "49a10d7d-b663-4498-81a8-466f09b327a8"
+          password: "{AQAAABAAAAAQ+tCxgJSQthb/UuuqxPk6wGovIKXQXfwcJ887UMpiHi0=}"
+          scope: GLOBAL
+          username: "admin"
+      - usernamePassword:
+          description: "IPContact"
+          id: "f48944d9-1863-4952-9c12-cbe6e5935165"
+          password: "{AQAAABAAAAAQ3vK/IRk/Moy4rYFqd1TQkjZSp+45ifr+Ji7mDDUIDcQ=}"
+          scope: GLOBAL
+          username: "sonda"
+      - usernamePassword:
+          description: "ISILON"
+          id: "7aa0e4f9-6c4a-4c29-804b-2530a11ebe65"
+          password: "{AQAAABAAAAAQSY8zI0ROrbLUj1oWwXY5gsq9nCKVNbvWSE0KcyVGyp8=}"
+          scope: GLOBAL
+          username: "root"
+      - usernamePassword:
+          description: "OMS Ministerio"
+          id: "f3526303-59f8-470b-9c0a-8dc253351bad"
+          password: "{AQAAABAAAAAQlT4DwRjYyR+1tXDlpgxbA6fBk4/0mbFyV62WCsUrWmY=}"
+          scope: GLOBAL
+          username: ".\\administrator"
+      - usernamePassword:
+          description: "Admin de WUG"
+          id: "de390d44-8035-4186-ac4a-2afa2bb40d2d"
+          password: "{AQAAABAAAAAQxxN3K2fxsda9jaUVV4qXFRr+frO/Sw03Ttu+TewOJ1M=}"
+          scope: GLOBAL
+          username: "admin"
+jenkins:
+  agentProtocols:
+  - "Ping"
+  authorizationStrategy:
+    roleBased:
+      roles:
+        global:
+        - assignments:
+          - "Domain Admins"
+          - "Operadores"
+          - "usr_jenkins"
+          - "ncabrera"
+          - "jkolugnyecz"
+          - "Nivel2"
+          - "ahernandez"
+          name: "admin"
+          pattern: ".*"
+          permissions:
+          - "Job/Move"
+          - "Job/Build"
+          - "Lockable Resources/View"
+          - "Credentials/Delete"
+          - "Credentials/ManageDomains"
+          - "Lockable Resources/Unlock"
+          - "View/Create"
+          - "Agent/Configure"
+          - "Job/Read"
+          - "Credentials/Update"
+          - "Agent/Create"
+          - "Job/Delete"
+          - "Agent/Build"
+          - "View/Configure"
+          - "Lockable Resources/Reserve"
+          - "Agent/Provision"
+          - "SCM/Tag"
+          - "Job/Create"
+          - "Job/Discover"
+          - "Credentials/View"
+          - "Agent/Connect"
+          - "Agent/Delete"
+          - "Run/Replay"
+          - "Agent/Disconnect"
+          - "Run/Delete"
+          - "Job/Cancel"
+          - "Overall/Read"
+          - "Run/Update"
+          - "Credentials/Create"
+          - "Overall/Administer"
+          - "View/Delete"
+          - "Job/Configure"
+          - "Job/Workspace"
+          - "View/Read"
+        - assignments:
+          - "anonymous"
+          - "acabrera"
+          name: "anonymous"
+          pattern: ".*"
+          permissions:
+          - "Overall/Read"
+          - "View/Create"
+          - "View/Delete"
+          - "View/Read"
+          - "View/Configure"
+          - "Agent/Connect"
+        items:
+        - assignments:
+          - "anonymous"
+          name: "Leer Clientes"
+          pattern: "Clientes"
+          permissions:
+          - "Job/Read"
+          - "Job/Workspace"
+        - name: "Leer RAFAP"
+          pattern: "Clientes/RAFAP"
+          permissions:
+          - "Job/Read"
+          - "Job/Workspace"
+        - assignments:
+          - "anonymous"
+          name: "Leer Sonda"
+          pattern: "Clientes/SONDA"
+          permissions:
+          - "Job/Read"
+          - "Job/Workspace"
+        - assignments:
+          - "anonymous"
+          name: "Leer Sonda FS"
+          pattern: "Clientes/SONDA/File Server.*"
+          permissions:
+          - "Job/Discover"
+          - "Job/Read"
+          - "Job/Workspace"
+  crumbIssuer:
+    standard:
+      excludeClientIPFromCrumb: true
+  disableRememberMe: false
+  disabledAdministrativeMonitors:
+  - "hudson.node_monitors.MonitorMarkedNodeOffline"
+  - "jenkins.monitor.JavaVersionRecommendationAdminMonitor"
+  - "jenkins.security.QueueItemAuthenticatorMonitor"
+  - "jenkins.security.s2m.MasterKillSwitchWarning"
+  - "jenkins.diagnostics.ControllerExecutorsAgents"
+  - "hudson.diagnosis.ReverseProxySetupMonitor"
+  labelAtoms:
+  - name: "Agente-BRAIN"
+  - name: "Agente-PPV"
+  - name: "Agente-PVCI"
+  - name: "Agente-Sonda"
+  - name: "Agente-Sonic"
+  - name: "BRAIN"
+  - name: "COPAGRAN"
+  - name: "Copagran_Agente"
+  - name: "DATACENTER"
+  - name: "MASTER"
+  - name: "PANDO_Agente"
+  - name: "PPV"
+  - name: "PVCI"
+  - name: "RAFAP"
+  - name: "Rafap32_Agente"
+  - name: "SONDA"
+  - name: "SONDA.COM"
+  - name: "built-in"
+  labelString: "MASTER"
+  markupFormatter: "plainText"
+  mode: NORMAL
+  myViewsTabBar: "standard"
+  nodes:
+  - permanent:
+      labelString: "BRAIN"
+      launcher:
+        jnlp:
+          webSocket: true
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      mode: EXCLUSIVE
+      name: "Agente-BRAIN"
+      numExecutors: 5
+      remoteFS: "c:\\sonda\\jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      labelString: "PPV"
+      launcher:
+        jnlp:
+          webSocket: true
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      mode: EXCLUSIVE
+      name: "Agente-PPV"
+      numExecutors: 5
+      remoteFS: "c:\\sonda\\jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      labelString: "PVCI"
+      launcher:
+        jnlp:
+          webSocket: true
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      mode: EXCLUSIVE
+      name: "Agente-PVCI"
+      numExecutors: 5
+      remoteFS: "c:\\sonda\\jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      labelString: "SONDA.COM"
+      launcher:
+        jnlp:
+          webSocket: true
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      mode: EXCLUSIVE
+      name: "Agente-Sonda"
+      numExecutors: 5
+      remoteFS: "c:\\sonda\\jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      labelString: "DATACENTER"
+      launcher:
+        jnlp:
+          webSocket: true
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      mode: EXCLUSIVE
+      name: "Agente-Sonic"
+      nodeProperties:
+      - toolLocation:
+          locations:
+          - home: "C:\\Program Files\\Git\\cmd\\git.exe"
+            key: "hudson.plugins.git.GitTool$DescriptorImpl@Default"
+      numExecutors: 5
+      remoteFS: "c:\\sonda\\jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      labelString: "COPAGRAN"
+      launcher:
+        jnlp:
+          webSocket: true
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      mode: EXCLUSIVE
+      name: "Copagran_Agente"
+      numExecutors: 5
+      remoteFS: "c:\\sonda\\jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      labelString: "SONDA"
+      launcher:
+        jnlp:
+          webSocket: true
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      mode: EXCLUSIVE
+      name: "PANDO_Agente"
+      nodeProperties:
+      - toolLocation:
+          locations:
+          - home: "C:\\Program Files\\Git\\cmd\\git.exe"
+            key: "hudson.plugins.git.GitTool$DescriptorImpl@Default"
+      numExecutors: 5
+      remoteFS: "c:\\sonda\\jenkins"
+      retentionStrategy: "always"
+  - permanent:
+      labelString: "RAFAP"
+      launcher:
+        jnlp:
+          webSocket: true
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      mode: EXCLUSIVE
+      name: "Rafap32_Agente"
+      numExecutors: 5
+      remoteFS: "c:\\sonda\\jenkins"
+      retentionStrategy: "always"
+  numExecutors: 15
+  primaryView:
+    all:
+      name: "all"
+  projectNamingStrategy: "standard"
+  quietPeriod: 5
+  remotingSecurity:
+    enabled: false
+  scmCheckoutRetryCount: 0
+  securityRealm:
+    activeDirectory:
+      cache:
+        size: 256
+        ttl: 600
+      customDomain: true
+      domains:
+      - bindName: "dcc-pando\\administrator"
+        bindPassword: "{AQAAABAAAAAQRebujjUP+5BxJeAfmko31bRtuGelCJNPEorqmeSZD90=}"
+        name: "dcc-pando.local"
+        servers: "192.168.240.160:3268"
+        site: "Default-First-Site-Name"
+        tlsConfiguration: TRUST_ALL_CERTIFICATES
+      groupLookupStrategy: RECURSIVE
+      removeIrrelevantGroups: false
+      startTls: true
+  slaveAgentPort: 59999
+  updateCenter:
+    sites:
+    - id: "default"
+      url: "https://updates.jenkins.io/update-center.json"
+  views:
+  - dashboard:
+      bottomPortlets:
+      - statSlaves:
+          name: "Agent statistics"
+      - statBuilds:
+          name: "Build statistics"
+      - hudsonStdJobsPortlet:
+          name: "Jenkins jobs list"
+      columns:
+      - "status"
+      - "weather"
+      - "jobName"
+      - "lastSuccess"
+      - "lastFailure"
+      - "lastDuration"
+      - "buildButton"
+      - "favoriteColumn"
+      includeRegex: "(?!test.*).*"
+      jobNames:
+      - "Clientes"
+      - "Datacenter"
+      - "Jenkins"
+      - "Operaciones"
+      leftPortlets:
+      - latestBuilds:
+          name: "Latest builds"
+          numBuilds: 30
+      name: "Dashboard"
+      recurse: true
+      rightPortlets:
+      - unstableJobsPortlet:
+          name: "Unstable Jobs"
+          recurse: true
+          showOnlyFailedJobs: true
+      useCssStyle: true
+  - all:
+      name: "all"
+  viewsTabBar: "standard"
+security:
+  apiToken:
+    creationOfLegacyTokenEnabled: false
+    tokenGenerationOnCreationEnabled: false
+    usageStatisticsEnabled: true
+  copyartifact:
+    mode: PRODUCTION
+  envInject:
+    enableLoadingFromMaster: false
+    enablePermissions: false
+    hideInjectedVars: false
+  sSHD:
+    port: 55555
+unclassified:
+  bitbucketEndpointConfiguration:
+    endpoints:
+    - bitbucketCloudEndpoint:
+        enableCache: false
+        manageHooks: false
+        repositoriesCacheDuration: 0
+        teamCacheDuration: 0
+  buildDiscarders:
+    configuredBuildDiscarders:
+    - "jobBuildDiscarder"
+  defaultFolderConfiguration:
+    healthMetrics:
+    - worstChildHealthMetric:
+        recursive: true
+  email-ext:
+    adminRequiredForTemplateTesting: false
+    allowUnregisteredEnabled: false
+    charset: "UTF-8"
+    debugMode: false
+    defaultBody: |-
+      $PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:
+
+      Check console output at $BUILD_URL to view the results.
+    defaultContentType: "text/plain"
+    defaultSubject: "$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!"
+    defaultTriggerIds:
+    - "hudson.plugins.emailext.plugins.trigger.FailureTrigger"
+    mailAccount:
+      smtpPassword: "{AQAAABAAAAAQYrL3XwGsWspWz5xwEvLbuzvrfTiX3nIZgdfY/MP4CkA=}"
+    maxAttachmentSize: -1
+    maxAttachmentSizeMb: -1
+    precedenceBulk: false
+    watchingEnabled: false
+  fingerprints:
+    fingerprintCleanupDisabled: false
+    storage: "file"
+  gitHubConfiguration:
+    apiRateLimitChecker: ThrottleForNormalize
+  gitHubPluginConfig:
+    hookUrl: "http://snipe-it:8081/github-webhook/"
+  gitLabConnectionConfig:
+    connections:
+    - apiTokenId: "GitLb_Pando"
+      clientBuilderId: "autodetect"
+      connectionTimeout: 10
+      ignoreCertificateErrors: true
+      name: "GitLab Pando"
+      readTimeout: 10
+      url: "http://git.dcc-pando.local"
+    useAuthenticatedEndpoint: false
+  gitSCM:
+    addGitTagAction: false
+    allowSecondFetch: false
+    createAccountBasedOnEmail: false
+    disableGitToolChooser: false
+    hideCredentials: false
+    showEntireCommitSummaryInChanges: false
+    useExistingAccountWithSameEmail: false
+  junitTestResultStorage:
+    storage: "file"
+  location:
+    adminAddress: "Dirección no configurada todavía <nobody@nowhere>"
+    url: "http://snipe-it:8081/"
+  mailer:
+    charset: "UTF-8"
+    useSsl: false
+    useTls: false
+  mavenModuleSet:
+    localRepository: "default"
+  pollSCM:
+    pollingThreadCount: 10
+  remoteBuildConfiguration:
+    remoteSites:
+    - address: "http://10.18.142.32:8080"
+      auth2:
+        CredentialsAuth:
+          credentials: "7fff14ea-a99f-4e7a-938b-4a7f34f6c02e"
+      displayName: "RAFAP32"
+      trustAllCertificates: true
+  simple-theme-plugin:
+    elements:
+    - cssUrl:
+        url: "https://cdn.rawgit.com/afonsof/jenkins-material-theme/gh-pages/dist/material-blue-grey.css"
+  timestamper:
+    allPipelines: false
+    elapsedTimeFormat: "'<b>'HH:mm:ss.S'</b> '"
+    systemTimeFormat: "'<b>'HH:mm:ss'</b> '"
+  upstream:
+    globalUpstreamFilterStrategy: UseOldest
+tool:
+  ansibleInstallation:
+    installations:
+    - home: "/usr/bin"
+      name: "ansible"
+  git:
+    installations:
+    - home: "git"
+      name: "Default"
+  mavenGlobalConfig:
+    globalSettingsProvider: "standard"
+    settingsProvider: "standard"
+  powerShellInstallation:
+    installations:
+    - home: "powershell.exe"
+      name: "DefaultWindows"
+    - home: "pwsh"
+      name: "DefaultLinux"
+

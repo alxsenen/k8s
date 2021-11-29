@@ -1,0 +1,146 @@
+# Default values for awx
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+nameOverride: ""
+fullnameOverride: ""
+
+replicaCount: 1
+image:
+  repository: ansible/awx
+  tag: "17.1.0"
+  pullPolicy: IfNotPresent
+extraVolumes: []
+nodeSelector:
+affinity:
+tolerations:
+web:
+  resources: {}
+    # We usually recommend not to specify default resources and to leave this as a conscious
+    # choice for the user. This also increases chances charts run on environments with little
+    # resources, such as Minikube. If you do want to specify resources, uncomment the following
+    # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+    # limits:
+    #  cpu: "1"
+    #  memory: "1Gi"
+    # requests:
+    #  cpu: "1"
+    #  memory: "1Gi"
+  extraVolumeMounts: []
+  extraVolumes: []
+
+# -- Existing service account name for AWX pods to use (optional)
+serviceAccountName:
+
+task:
+  resources: {}
+    # We usually recommend not to specify default resources and to leave this as a conscious
+    # choice for the user. This also increases chances charts run on environments with little
+    # resources, such as Minikube. If you do want to specify resources, uncomment the following
+    # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+    # limits:
+    #  cpu: "1.5"
+    #  memory: "2Gi"
+    # requests:
+    #  cpu: "1.5"
+    #  memory: "2Gi"
+  extraVolumeMounts: []
+
+redis:
+  image:
+    repository: redis
+    tag: "6.2.4"
+    pullPolicy: IfNotPresent
+  resources: {}
+
+# -- The key used to encrypt secrets in the AWX database. You must set this value or provide secretKeyExistingSecret
+secretKey:
+secret_key:
+# -- The name of an existing secret in the same namespace containing a SECRET_KEY key and value
+secretKeyExistingSecret:
+
+# -- The seeded admin user credentials. You must set this value or provide defaultAdminExistingSecret
+defaultAdminUser: "adminsonda"
+# for backwards compatibility
+default_admin_user: "adminsonda"
+# -- The seeded admin user credentials. You must set this value or provide defaultAdminExistingSecret
+defaultAdminPassword: "Sertec035"
+# for backwards compatibility
+default_admin_password: "Sertec035"
+# -- The name of an existing secret in the same namespace containing `AWX_ADMIN_USER` and `AWX_ADMIN_PASSWORD` keys and values
+defaultAdminExistingSecret:
+
+extraConfiguration: |-
+ INSIGHTS_URL_BASE = "https://awx.dcc-pando.local"
+
+service:
+  type: ClusterIP
+  port: 8080
+
+persistence:
+    ## @param secondary.persistence.enabled Enable persistence on MySQL secondary replicas using a `PersistentVolumeClaim`
+    ##
+    enabled: true
+    ## @param secondary.persistence.storageClass MySQL secondary persistent volume storage Class
+    ## If defined, storageClassName: <storageClass>
+    ## If set to "-", storageClassName: "", which disables dynamic provisioning
+    ## If undefined (the default) or set to null, no storageClassName spec is
+    ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
+    ##   GKE, AWS & OpenStack)
+    ##
+    storageClass: "managed-nfs-storage"
+    ## @param secondary.persistence.annotations [object] MySQL secondary persistent volume claim annotations
+    ##
+    annotations: {}
+    ## @param secondary.persistence.accessModes MySQL secondary persistent volume access Modes
+    ##
+    accessModes:
+      - ReadWriteOnce
+    ## @param secondary.persistence.size MySQL secondary persistent volume size
+    ##
+    size: 10Gi
+
+ingress:
+  enabled: true
+  # -- Whether the default backend for this ingress should route to the awx service
+  defaultBackend: true
+  # -- Define ingress routing here
+  hosts: 
+    - host: awx.dcc-pando.local
+      paths:
+        - "/"
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    kubernetes.io/tls-acme: "true"
+  tls: 
+    # -- Secrets referenced here must be exist in this namespace
+    - secretName: awx-tls
+      hosts:
+        - awx.dcc-pando.local
+ 
+# -- See bitnami/postgresql chart values for all options
+postgresql:
+  # -- Set to false if using external postgresql
+  enabled: false
+  image:
+    registry: docker.io
+    repository: bitnami/postgresql
+    tag: 9.6
+  service:
+    port: "5432"
+  postgresqlUsername: awx
+  # -- You must set this value or provide postgresqlExistingSecret
+  postgresqlPassword:
+  postgresqlDatabase: awx
+  # -- Set this only if using an external postgresql database. Alternatively, you can provide this value through postgresqlExistingSecret.
+  postgresqlHost:
+  persistence:
+    enabled: true
+    # size: 50Gi
+  # resources: {}
+  metrics:
+    enabled: false
+
+# -- The name of an existing secret in the same namespace containing DATABASE_USER, DATABASE_NAME, DATABASE_HOST, DATABASE_HOST, DATABASE_PORT, DATABASE_PASSWORD, DATABASE_ADMIN_PASSWORD keys and values
+postgresqlExistingSecret:
+
