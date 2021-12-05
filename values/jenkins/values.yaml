@@ -433,11 +433,11 @@ controller:
     # Set this path to jenkinsUriPrefix above or use annotations to rewrite path
     # path: "/jenkins"
     # configures the hostname e.g. jenkins.example.com
-    hostName: jenkins.dcc-pando.local
+    hostName: jenkins.sonda.com.uy
     tls:
-     - secretName: jenkins-tls
+     - secretName: sonda-wilcard-tls
        hosts:
-        - jenkins.dcc-pando.local
+        - jenkins.sonda.com.uy
 
   # often you want to have your controller all locked down and private
   # but you still want to get webhooks from your SCM
